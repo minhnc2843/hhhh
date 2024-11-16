@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Dashboard</title>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<link href="./admin.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<a class="navbar-brand" href="home.html">Admin Dashboard</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+    <li class="nav-item">
+    <a class="nav-link" href="sanpham.html">Quản lý sản phẩm</a></li>
+    <li class="nav-item">
+    
+    <a class="nav-link" href="danhmuc.html">Quản lý danh mục sản phẩm</a></li>
+    <li class="nav-item">
+    
+    <a class="nav-link" href="thongke.html">Thống kê</a></li>
+    <li class="nav-item">
+    
+    <a class="nav-link" href="donhang.html">Lịch sử đơn hàng</a></li>
+    <li class="nav-item">
+    
+    <a class="nav-link" href="user.html">Quản lý người dùng</a></li>
+    <a class="nav-link" href="profile.html">Profile</a></li>
+    <a class="nav-link" href="#">Vào Website</a></li>
+
+    </ul>
+</div>
+</nav>
+<div class="container mt-4">
+    <h2>Quản lý Danh Mục Sản Phẩm</h2>
+    <!-- Tìm kiếm và Lọc -->
+    <div class="row mb-3">
+        <div class="col-md-4">
+            <input type="text" class="form-control" placeholder="Tìm kiếm sản phẩm...">
+        </div>
+        <div class="col-md-3">
+            <select class="form-control">
+                <option>Chọn danh mục</option>
+                <option value="">danh muc abc</option>
+                <!-- Thêm các tùy chọn danh mục ở đây -->
+            </select>
+        </div>
+        <div class="col-md-2">
+            <button class="btn btn-primary">Tìm kiếm</button>
+        </div>
+        <button class="btn btn-success">Thêm Danh MỤc</button>
+    </div>
+    <!-- Bảng hiển thị danh sách sản phẩm -->
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>STT</th>
+                <th>ID danh muc</th>
+                <th>Tên sản phẩm</th>
+                <th>Tên danh mục</th>
+                <th>Giá</th>
+                <th>Hành động</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>0122</td>
+                <td>Sản phẩm A</td>
+                <td>Danh mục 1</td>
+                <td>500,000 VND</td>
+                <td>
+                    <button class="btn btn-info btn-sm">Sửa</button>
+                    <button class="btn btn-danger btn-sm">Xóa</button>
+                </td>
+            </tr>
+            <!-- Thêm các sản phẩm khác ở đây -->
+        </tbody>
+    </table>
+   
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
